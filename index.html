@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Jyotish Aryraaj Upadhyay — Personal Astrology Consultation</title>
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<style>
+    @layer base {
+      html, body { margin: 0; padding: 0; }
+      body { overscroll-behavior: none; }
+    }
+    ::-webkit-scrollbar { display: none; }
+    [data-page-view].hidden { display: none !important; }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#D96B27",
+            "primary-dark": "#c25a1b",
+            secondary: "#F59E0B",
+            tertiary: "#7B112B",
+            surface: "#FFFFFF",
+            "surface-subtle": "#FAF8FF",
+            "surface-low": "#F8FAFC",
+            "surface-card": "#FFFFFF",
+            "border-subtle": "#E2E8F0",
+            "border-warm": "#FED7AA"
+          },
+          fontFamily: {
+            display: ['"Playfair Display"', 'serif'],
+            body: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-white font-body text-slate-800 antialiased min-h-screen flex flex-col">
+<!-- 1. NAVBAR -->
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-slate-200">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 h-20 flex items-center justify-between">
+<!-- Logo / Brand name -->
+<a class="flex items-center gap-2 group" href="#home" data-page-link="home">
+<span class="text-primary text-xl font-bold transition-transform group-hover:scale-110">✦</span>
+<span class="font-display text-xl sm:text-2xl font-semibold text-slate-900 tracking-tight">ज्योतिषाचार्य Aryraaj Upadhyay&nbsp;</span>
+</a>
+<!-- Navigation links -->
+<nav class="hidden md:flex items-center gap-8" aria-label="Main navigation">
+<a class="text-sm font-semibold text-primary transition-colors" href="#home" data-page-link="home" data-page-nav="home" aria-current="page">Home</a>
+<a class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors" href="#about" data-page-link="about" data-page-nav="about">About</a>
+<a class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors" href="#appointment" data-page-link="appointment" data-page-nav="appointment">Appointment</a>
+<a class="text-sm font-medium text-slate-600 hover:text-slate-900 transition-colors" href="#ratings" data-page-link="ratings" data-page-nav="ratings">Ratings</a>
+</nav>
+<!-- CTA button -->
+<div class="flex items-center">
+<a class="inline-flex items-center justify-center px-5 py-2.5 rounded-lg bg-primary text-white text-sm font-semibold hover:bg-primary-dark shadow-sm hover:shadow transition-all duration-200" href="#appointment" data-page-link="appointment">
+          Book Now
+        </a>
+</div>
+</div>
+<nav class="md:hidden flex justify-center gap-6 border-t border-slate-100 px-4 py-2" aria-label="Mobile navigation">
+<a class="text-xs font-semibold text-primary" href="#home" data-page-link="home" data-page-nav="home" aria-current="page">Home</a>
+<a class="text-xs font-medium text-slate-600" href="#about" data-page-link="about" data-page-nav="about">About</a>
+<a class="text-xs font-medium text-slate-600" href="#appointment" data-page-link="appointment" data-page-nav="appointment">Appointment</a>
+<a class="text-xs font-medium text-slate-600" href="#ratings" data-page-link="ratings" data-page-nav="ratings">Ratings</a>
+</nav>
+</header>
+<main class="flex-1 w-full">
+<!-- 2. HERO SECTION -->
+<section id="home" data-page-view="home" class="relative w-full overflow-hidden bg-gradient-to-b from-amber-50/50 via-white to-slate-50/60 border-b border-slate-200/80 pt-16 pb-20 lg:pt-24 lg:pb-28">
+<!-- Subtle Decorative Aura -->
+<div class="absolute -top-24 right-1/4 w-96 h-96 bg-amber-100/40 rounded-full blur-3xl pointer-events-none"></div>
+<div class="absolute top-1/2 -left-20 w-80 h-80 bg-orange-100/30 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Column: Copy & Trust Row -->
+<div class="lg:col-span-7 space-y-8">
+<div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-50 border border-amber-200/80 shadow-xs">
+<span class="text-primary text-xs">✦</span>
+<span class="text-xs font-semibold tracking-wider uppercase text-amber-900">Personal Astrology Consultation</span>
+</div>
+<div class="space-y-4">
+<h1 class="font-display text-4xl sm:text-5xl lg:text-6xl font-semibold text-slate-900 leading-[1.15] tracking-tight">आपके अगले कदम के<span class="text-primary italic font-normal">लिए मार्गदर्शन |</span></h1>
+<p class="text-base sm:text-lg text-slate-600 leading-relaxed max-w-2xl">
+                Book a private astrology consultation with Jyotish Aryraaj Upadhyay. Choose your consultation type and duration and receive your appointment details.
+              </p>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-lg bg-primary text-white text-sm font-semibold shadow-md hover:bg-primary-dark hover:shadow-lg transition-all duration-200" href="#appointment" data-page-link="appointment">
+<span class="">Book an Appointment</span>
+<span class="">→</span>
+</a>
+<a class="inline-flex items-center justify-center px-6 py-3.5 rounded-lg bg-white border border-slate-300 text-slate-700 text-sm font-semibold hover:bg-slate-50 hover:text-slate-900 transition-all duration-200 shadow-xs" href="#about" data-page-link="about">
+                Learn More
+              </a>
+</div>
+<!-- Trust Row Stats -->
+<div class="pt-6 border-t border-slate-200/80">
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 max-w-2xl">
+<div class="space-y-1">
+<div class="font-display text-2xl sm:text-3xl font-bold text-slate-900">7+ Yrs</div>
+<div class="text-xs sm:text-sm font-medium text-slate-500">Experience</div>
+</div>
+<div class="space-y-1 sm:border-l sm:border-slate-200 sm:pl-6">
+<div class="font-display text-2xl sm:text-3xl font-bold text-slate-900">10k+</div>
+<div class="text-xs sm:text-sm font-medium text-slate-500">Consultations</div>
+</div>
+<div class="space-y-1 border-t sm:border-t-0 sm:border-l border-slate-200 pt-3 sm:pt-0 sm:pl-6">
+<div class="font-display text-2xl sm:text-3xl font-bold text-amber-600 flex items-center gap-1">
+<span class="text-amber-500 text-xl">★</span> 5.0
+</div>
+<div class="text-xs sm:text-sm font-medium text-slate-500">1k+ reviews</div>
+</div>
+<div class="space-y-1 border-t sm:border-t-0 sm:border-l border-slate-200 pt-3 sm:pt-0 sm:pl-6">
+<div class="font-display text-xl sm:text-2xl font-bold text-slate-900">15–60 m</div>
+<div class="text-xs sm:text-sm font-medium text-slate-500">Min Sessions</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Hero Profile Card -->
+<div class="lg:col-span-5 flex justify-center lg:justify-end">
+<div class="w-full max-w-md bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden p-6 transition-all hover:shadow-2xl">
+<!-- Profile Photo Area Placeholder -->
+<div class="relative w-full aspect-[4/5] rounded-xl overflow-hidden border-2 border-amber-200/80 shadow-md group"><img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOW8iiMRk48qblb6myAsUw0V_sD-ezK83fOjGJMS4Ye8xuXcdVHGjIMWaM2bckbu-OrelfZWJKnoePkqZ7-zFbUJV3ygkyz8pZpX1d10SPUT5TTdcCqTsWAM7sFNXhm-5n6NOoeDBP_Dcyv1iZLqPs-atrvvS822ukVjSNQj5RXuJvEac7rDQGQE-h6wkovSNYwdkpmm8lmI3U6Tbv0WxdHRwnyRln_1akWmDK_LqZve916uPom5TzSOFP1M1fltpZ7RI" alt="Jyotish Aryraaj Upadhyay" class="w-full h-full object-cover object-top transition-transform duration-200 group-hover:scale-105"><div class="absolute inset-0 bg-gradient-to-t from-slate-900/30 via-transparent to-transparent pointer-events-none"></div><div class="absolute top-3 left-3 text-xs text-amber-300 select-none drop-shadow">✦</div><div class="absolute top-3 right-3 text-xs text-amber-300 select-none drop-shadow">✦</div><div class="absolute bottom-3 left-3 text-xs text-amber-300 select-none drop-shadow">✦</div><div class="absolute bottom-3 right-3 text-xs text-amber-300 select-none drop-shadow">✦</div></div>
+<!-- Below Photo Info -->
+<div class="mt-6 pt-5 border-t border-slate-100 text-center">
+<span class="text-[11px] font-bold tracking-widest text-slate-400 uppercase">Consultation with</span>
+<div class="mt-1 flex items-center justify-center gap-2">
+<h2 class="font-display text-xl font-bold text-slate-900">ज्योतिषाचार्य Aryraaj Upadhyay&nbsp;</h2>
+<span class="inline-flex items-center justify-center w-5 h-5 rounded-full bg-emerald-500 text-white text-[11px] font-bold shadow-xs" title="Verified Acharya">✓</span>
+</div>
+<div class="mt-4 pt-3 border-t border-slate-100/80 text-left">
+<div class="text-[11px] font-bold uppercase tracking-wider text-slate-400 mb-2 text-center">Areas of Expertise</div>
+<div class="flex flex-wrap items-center justify-center gap-1.5">
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-900 border border-amber-200/60">Vedic Astrology</span>
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-900 border border-amber-200/60">Numerology</span>
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-900 border border-amber-200/60">Palmistry</span>
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-900 border border-amber-200/60">Face Reading</span>
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-900 border border-amber-200/60">Vastu</span>
+<span class="px-2.5 py-1 rounded-full text-xs font-medium bg-amber-50 text-amber-900 border border-amber-200/60">Lal Kitab Remedies</span>
+</div>
+</div></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 3. SERVICES / CONSULTATION OPTIONS SECTION -->
+<section class="w-full py-20 lg:py-28 bg-white border-b border-slate-200/80" id="services" data-page-view="home">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<!-- Section Header -->
+<div class="text-center max-w-2xl mx-auto mb-16 space-y-3">
+<span class="text-xs font-bold tracking-widest text-primary uppercase">Consultation Options</span>
+<h2 class="font-display text-3xl sm:text-4xl font-semibold text-slate-900">Choose what works for you.</h2>
+<p class="text-slate-600 text-base">Simple options, clear pricing and a private appointment experience.</p>
+</div>
+<!-- 3 Cards Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+<!-- Card 1: Voice Consultation -->
+<div class="relative bg-white rounded-2xl border border-slate-200 p-8 flex flex-col justify-between hover:border-slate-300 hover:shadow-md transition-all">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-700 text-xl">
+                ☎
+              </div>
+<h3 class="font-display text-2xl font-semibold text-slate-900">Voice Consultation</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+                Private audio consultation through your scheduled meeting session.
+              </p>
+</div>
+<div class="mt-8 pt-6 border-t border-slate-100 flex items-baseline justify-between">
+<div>
+<span class="text-xs text-slate-400 uppercase font-semibold block mb-0.5">Starting at</span>
+<span class="font-display text-2xl font-bold text-slate-900">From ₹749</span>
+</div>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">15–60 min</span>
+</div>
+</div>
+<!-- Card 2: Video Consultation (FEATURED / POPULAR) -->
+<div class="relative bg-white rounded-2xl border-2 border-primary p-8 flex flex-col justify-between shadow-lg shadow-orange-500/5 transition-all hover:shadow-xl">
+<!-- Popular Badge -->
+<div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-primary text-white text-[11px] font-bold uppercase tracking-wider px-3.5 py-1 rounded-full shadow-sm">
+              Popular
+            </div>
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-xl bg-amber-50 border border-amber-200 flex items-center justify-center text-primary text-2xl">
+                ◉
+              </div>
+<h3 class="font-display text-2xl font-semibold text-slate-900">Video Consultation</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+                Private audio and video consultation through your scheduled meeting session.
+              </p>
+</div>
+<div class="mt-8 pt-6 border-t border-orange-100 flex items-baseline justify-between">
+<div>
+<span class="text-xs text-primary font-semibold uppercase block mb-0.5">Recommended</span>
+<span class="font-display text-2xl font-bold text-slate-900">From ₹1,499</span>
+</div>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-amber-50 text-amber-900 border border-amber-200/60">15–60 min</span>
+</div>
+</div>
+<!-- Card 3: Kundli -->
+<div class="relative bg-white rounded-2xl border border-slate-200 p-8 flex flex-col justify-between hover:border-slate-300 hover:shadow-md transition-all">
+<div class="space-y-4">
+<div class="w-12 h-12 rounded-xl bg-slate-100 border border-slate-200 flex items-center justify-center text-slate-700 text-xl">
+                ☽
+              </div>
+<h3 class="font-display text-2xl font-semibold text-slate-900">Kundli</h3>
+<p class="text-sm text-slate-600 leading-relaxed">
+                Enter your birth details to prepare your consultation kundli.
+              </p>
+</div>
+<div class="mt-8 pt-6 border-t border-slate-100 flex items-baseline justify-between">
+<div>
+<span class="text-xs text-slate-400 uppercase font-semibold block mb-0.5">Custom Analysis<br><span style="color: rgb(15, 23, 42); font-family: &quot;Playfair Display&quot;, serif; font-size: 24px; text-transform: none;" class="">From ₹499</span></span>
+<span class="font-display text-xl font-bold text-slate-900"></span>
+</div>
+<span class="text-xs font-semibold px-2.5 py-1 rounded-full bg-slate-100 text-slate-600">Private</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ABOUT PROFILE -->
+<section class="w-full py-16 lg:py-24 bg-white border-b border-slate-200/80" id="about" data-page-view="about">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<div class="lg:col-span-5">
+<div class="max-w-md mx-auto rounded-2xl border border-slate-200 bg-white p-5 shadow-lg">
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI4d4IMvVhJcipZEt3Q9Uz4_rXSpzqNffqbxPZVzlfdj5noEXy4mmXXdIN59SbLsMyo2HgEutd5kVnEB-VyE_91LCfawaTLaM38NeAOJ2e8gzW8xYOzTT8HX-KunMTmYGWEH0ZS47q5dVmuiyj4xjnx4Ghvf4X9mbRvSklHthOfaIyd28ZyyT_WxENgCTy7Bf_3YZs7PjmAB3jzvqv3yYRL4qy0mSuMJuVtAQlXA-p5UVUqCNs1JFIRUtcLMRZy87kSZQ" alt="Jyotish Aryraaj Upadhyay" class="w-full aspect-[4/5] rounded-xl object-cover object-top">
+</div>
+</div>
+<div class="lg:col-span-7 space-y-5">
+<span class="text-xs font-bold tracking-widest text-primary uppercase">Vedic Astrologer &amp; Life Coach</span>
+<h2 class="font-display text-3xl sm:text-4xl lg:text-5xl font-semibold text-slate-900 leading-tight">Jyotish Aryraaj Upadhyay</h2>
+<div class="flex flex-wrap gap-2 text-xs font-semibold text-amber-900">
+<span class="px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200">7+ Years Experience</span>
+<span class="px-3 py-1.5 rounded-full bg-amber-50 border border-amber-200">10,000+ Consultations</span>
+<span class="px-3 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700">Hindi &amp; English</span>
+</div>
+<p class="text-base text-slate-600 leading-relaxed">Jyotish Aryraaj Upadhyay is an astrology consultant and life coach with expertise in Vedic Astrology, Numerology, Vastu Shastra, Palmistry, Face Reading, and Lal Kitab remedies. He offers personalized guidance on relationships, marriage, career, business, and wealth, with practical recommendations intended to support clarity and informed decisions.</p>
+<div>
+<h3 class="text-xs font-bold tracking-wider uppercase text-slate-500 mb-3">Areas of Expertise</h3>
+<div class="flex flex-wrap gap-2">
+<span class="px-3 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200/70 text-xs">Vedic Astrology</span><span class="px-3 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200/70 text-xs">Numerology</span><span class="px-3 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200/70 text-xs">Palmistry</span><span class="px-3 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200/70 text-xs">Face Reading</span><span class="px-3 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200/70 text-xs">Vastu</span><span class="px-3 py-1.5 rounded-full bg-amber-50 text-amber-900 border border-amber-200/70 text-xs">Lal Kitab Remedies</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- BOOKING FORM -->
+<section class="w-full py-16 lg:py-24 bg-slate-50 border-b border-slate-200/80" id="appointment" data-page-view="appointment">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="text-center max-w-2xl mx-auto mb-10 space-y-3"><span class="text-xs font-bold tracking-widest text-primary uppercase">Book an Appointment</span><h2 class="font-display text-3xl sm:text-4xl font-semibold text-slate-900">Your consultation, organised.</h2><p class="text-slate-600">Select your consultation and preferred slot. Payment is completed securely through the configured payment service.</p><button id="startBooking" type="button" class="inline-flex items-center gap-2 rounded-lg bg-primary px-6 py-3 text-sm font-semibold text-white hover:bg-primary-dark">Start Booking <span aria-hidden="true">→</span></button></div>
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+<form id="bookingForm" class="lg:col-span-8 bg-white border border-slate-200 rounded-xl p-6 sm:p-8 shadow-sm space-y-8">
+<fieldset class="space-y-3"><legend class="text-base font-bold text-slate-900">01. Consultation type</legend><div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<label id="label-consult-voice" class="border-2 border-primary rounded-lg p-4 cursor-pointer"><input checked type="radio" name="consultationType" value="Voice" class="accent-[#D96B27]"> <span class="font-semibold">Voice Call</span><span class="block text-xs text-slate-500 mt-1">Live audio consultation</span></label>
+<label id="label-consult-video" class="border border-slate-200 rounded-lg p-4 cursor-pointer"><input type="radio" name="consultationType" value="Video" class="accent-[#D96B27]"> <span class="font-semibold">Video Call</span><span class="block text-xs text-slate-500 mt-1">Live video consultation</span></label>
+<label id="label-consult-kundli" class="border border-slate-200 rounded-lg p-4 cursor-pointer"><input type="radio" name="consultationType" value="Kundli Only" class="accent-[#D96B27]"> <span class="font-semibold">Kundli Report</span><span class="block text-xs text-slate-500 mt-1">PDF report, ₹499</span></label>
+</div></fieldset>
+<fieldset id="durationSection" class="space-y-3 border-t border-slate-100 pt-6"><legend class="text-base font-bold text-slate-900">02. Duration</legend><div id="durationOptionsGrid" class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+<label class="border-2 border-primary rounded-lg p-4 cursor-pointer"><input checked type="radio" name="duration" value="15" class="accent-[#D96B27]"> 15 minutes <span class="block text-xs text-slate-500 mt-1">Up to 3 questions</span></label>
+<label class="border border-slate-200 rounded-lg p-4 cursor-pointer"><input type="radio" name="duration" value="30" class="accent-[#D96B27]"> 30 minutes <span class="block text-xs text-slate-500 mt-1">Up to 5 questions</span></label>
+<label class="border border-slate-200 rounded-lg p-4 cursor-pointer"><input type="radio" name="duration" value="60" class="accent-[#D96B27]"> 1 hour <span class="block text-xs text-slate-500 mt-1">Up to 10 questions</span></label>
+</div><p id="durationKundliBanner" class="hidden text-sm text-slate-600">Duration is not applicable to a Kundli report.</p></fieldset>
+<fieldset class="space-y-4 border-t border-slate-100 pt-6"><legend class="text-base font-bold text-slate-900">03. Your details</legend><div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<label class="text-xs font-semibold text-slate-600">Full name *<input id="fullName" required type="text" autocomplete="name" class="mt-1 block w-full rounded-md border-slate-300 text-sm" placeholder="Your name"></label>
+<label class="text-xs font-semibold text-slate-600">Mobile number *<input id="mobile" required type="tel" autocomplete="tel" class="mt-1 block w-full rounded-md border-slate-300 text-sm" placeholder="Your phone number"></label>
+<label class="text-xs font-semibold text-slate-600">Email address *<input id="email" required type="email" autocomplete="email" class="mt-1 block w-full rounded-md border-slate-300 text-sm" placeholder="you@example.com"></label>
+<label id="appointmentDateWrapper" class="text-xs font-semibold text-slate-600">Preferred date *<input id="appointmentDate" required type="date" class="mt-1 block w-full rounded-md border-slate-300 text-sm"></label>
+</div><div id="questionsWrapper"><div class="flex justify-between items-center mt-4"><label class="text-xs font-semibold text-slate-600 uppercase">Your questions</label><span id="questionLimit" class="text-xs text-primary">Maximum 3</span></div><div id="questions" class="space-y-2 mt-2"><input type="text" placeholder="Question 1" class="block w-full rounded-md border-slate-300 text-sm"></div><button id="addQuestion" type="button" class="mt-3 text-sm font-semibold text-primary">+ Add question</button></div></fieldset>
+<fieldset class="space-y-4 border-t border-slate-100 pt-6"><legend class="text-base font-bold text-slate-900">04. Birth details</legend><div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<label class="text-xs font-semibold text-slate-600">Name<input id="kundliName" type="text" class="mt-1 block w-full rounded-md border-slate-300 text-sm"></label>
+<label class="text-xs font-semibold text-slate-600">Date of birth<input id="birthDate" type="date" class="mt-1 block w-full rounded-md border-slate-300 text-sm"></label>
+<label class="text-xs font-semibold text-slate-600">Birth time<input id="birthTime" type="time" class="mt-1 block w-full rounded-md border-slate-300 text-sm"></label>
+<label class="text-xs font-semibold text-slate-600">Country<select id="birthCountry" class="mt-1 block w-full rounded-md border-slate-300 text-sm"><option>India</option><option>Nepal</option><option>United States</option><option>United Kingdom</option><option>Canada</option><option>Australia</option><option>Other</option></select></label>
+<label class="sm:col-span-2 text-xs font-semibold text-slate-600">Birth city / place<input id="birthPlace" type="text" class="mt-1 block w-full rounded-md border-slate-300 text-sm" placeholder="City or place of birth"></label>
+</div><label id="kundliAddonWrapper" class="flex items-start gap-3 rounded-lg border border-amber-200 bg-amber-50/50 p-4 text-sm"><input id="includeKundliCheckbox" type="checkbox" checked class="mt-1 accent-[#D96B27]"><span><strong>Include detailed Kundli analysis (+₹499)</strong><span class="block text-xs text-slate-600 mt-1">Add a birth-chart PDF to your consultation.</span></span></label><p id="kundliIncludedNotice" class="hidden text-sm text-primary">Kundli report selected. Birth details are required.</p><p class="text-xs text-slate-500">Birth details are used only to prepare your consultation.</p></fieldset>
+<section id="slotsSection" class="space-y-4 border-t border-slate-100 pt-6"><div><h3 class="text-base font-bold text-slate-900">05. Available slots</h3><p class="text-xs text-slate-500">Appointments are available between 1:00 PM and 5:00 PM.</p></div><div id="slots" class="grid grid-cols-2 sm:grid-cols-4 gap-3"><p class="col-span-full text-sm text-slate-500">Select a date to view available times.</p></div><div id="selectedSlotNotice" class="hidden rounded-lg border border-emerald-200 bg-emerald-50 p-3"><p class="text-xs font-semibold">Selected slot</p><p id="selectedSlotText" class="text-sm text-emerald-700"></p></div>
+<section id="paymentSection" class="hidden rounded-lg border border-slate-200 bg-slate-50 p-5 space-y-4"><h3 class="font-bold text-slate-900">Payment <span id="totalAmount" class="float-right text-primary">₹1,248</span></h3><div id="paymentStatus" class="hidden rounded-md border p-3 text-sm" role="status" aria-live="polite"></div><button id="verifyPayment" type="button" class="w-full rounded-md bg-primary px-5 py-3 font-semibold text-white hover:bg-primary-dark">Pay &amp; Verify Payment</button><p class="text-xs text-slate-500">Payment is processed by the configured payment service.</p></section>
+<section id="confirmSection" class="hidden rounded-lg border border-emerald-200 bg-emerald-50 p-5"><h3 class="font-bold text-slate-900">Payment verified</h3><p class="text-sm text-slate-600 mb-4">Confirm your appointment request.</p><button id="confirmAppointment" type="submit" class="w-full rounded-md bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700">Confirm Appointment</button></section>
+</section>
+</form>
+<aside class="lg:col-span-4 lg:sticky lg:top-28"><div class="rounded-xl border border-slate-200 bg-white p-6 shadow-sm"><span class="text-xs font-bold tracking-widest text-primary">APPOINTMENT SUMMARY</span><h3 class="font-display text-xl font-bold text-slate-900 mt-1 mb-5">Review your selection</h3><dl class="space-y-3 text-sm"><div class="flex justify-between gap-3"><dt>Consultation</dt><dd id="summaryType" class="font-semibold">Voice</dd></div><div class="flex justify-between gap-3"><dt>Duration</dt><dd id="summaryDuration" class="font-semibold">15 minutes</dd></div><div class="flex justify-between gap-3"><dt>Questions</dt><dd id="summaryQuestions" class="font-semibold">0 / 3</dd></div><div class="flex justify-between gap-3"><dt>Kundli</dt><dd id="summaryKundli" class="font-semibold">Yes (+₹499)</dd></div><div class="flex justify-between gap-3"><dt>Date</dt><dd id="summaryDate" class="font-semibold">Not selected</dd></div><div class="flex justify-between gap-3"><dt>Slot</dt><dd id="summarySlot" class="font-semibold">Not selected</dd></div><div class="flex justify-between border-t border-slate-200 pt-4 text-base font-bold"><dt>Total</dt><dd id="summaryTotal" class="text-primary">₹1,248</dd></div></dl></div><p class="mt-4 rounded-lg bg-amber-50 p-4 text-xs text-slate-600">Private appointment details are shared after confirmation.</p></aside>
+</div>
+</div>
+</section>
+<!-- 5. HOW IT WORKS SECTION -->
+<section class="w-full py-20 lg:py-28 bg-slate-900 text-white relative overflow-hidden" id="process" data-page-view="about">
+<!-- Ambient celestial backdrop glow -->
+<div class="absolute -top-40 left-1/3 w-[600px] h-[400px] bg-primary/10 rounded-full blur-3xl pointer-events-none"></div>
+<div class="max-w-7xl mx-auto px-6 lg:px-12 relative z-10">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
+<!-- Left Column -->
+<div class="lg:col-span-5 space-y-4">
+<span class="text-xs font-bold tracking-widest text-amber-400 uppercase">How It Works</span>
+<h2 class="font-display text-3xl sm:text-4xl font-semibold text-white leading-tight">अपनी सलाह-मशविरा बुक करने का आसान तरीका।</h2>
+<p class="text-slate-300 text-base leading-relaxed pt-2">
+              Your appointment is planned around the Jyotish's working hours, existing bookings, consultation duration and a five-minute gap between appointments.
+            </p>
+</div>
+<!-- Right Column: 3 Steps -->
+<div class="lg:col-span-7 space-y-6">
+<!-- Step 01 -->
+<div class="p-6 sm:p-8 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-start gap-6 hover:border-amber-400/40 transition-colors">
+<span class="font-display text-3xl font-bold text-amber-400 shrink-0">01</span>
+<div class="space-y-1">
+<h3 class="font-display text-xl font-semibold text-white">Choose a consultation</h3>
+<p class="text-slate-300 text-sm leading-relaxed">Select voice or video and 15, 30, or 60 minutes.</p>
+</div>
+</div>
+<!-- Step 02 -->
+<div class="p-6 sm:p-8 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-start gap-6 hover:border-amber-400/40 transition-colors">
+<span class="font-display text-3xl font-bold text-amber-400 shrink-0">02</span>
+<div class="space-y-1">
+<h3 class="font-display text-xl font-semibold text-white">Complete payment</h3>
+<p class="text-slate-300 text-sm leading-relaxed">
+                  Payment is completed before your appointment slot is revealed.
+                </p>
+</div>
+</div>
+<!-- Step 03 -->
+<div class="p-6 sm:p-8 rounded-xl bg-slate-800/80 border border-slate-700/80 flex items-start gap-6 hover:border-amber-400/40 transition-colors">
+<span class="font-display text-3xl font-bold text-amber-400 shrink-0">03</span>
+<div class="space-y-1">
+<h3 class="font-display text-xl font-semibold text-white">Get your private session</h3>
+<p class="text-slate-300 text-sm leading-relaxed">
+                  Your confirmed appointment receives its own private meeting details.
+                </p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. RATINGS PREVIEW SECTION -->
+<section class="w-full py-20 lg:py-28 bg-slate-50/70 border-b border-slate-200" id="ratings" data-page-view="ratings">
+<div class="max-w-7xl mx-auto px-6 lg:px-12">
+<div class="bg-white rounded-3xl border border-slate-200/90 shadow-sm p-8 sm:p-12 lg:p-16 flex flex-col md:flex-row items-center justify-between gap-10"><div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 pb-8 border-b border-slate-100">
+<div class="space-y-3">
+<span class="text-xs font-bold tracking-widest text-primary uppercase">Client Ratings</span>
+<h2 class="font-display text-3xl sm:text-4xl font-semibold text-slate-900">What clients say matters.</h2>
+<p class="text-slate-600 text-base leading-relaxed max-w-xl">Real experiences and heartfelt words from people guided by Jyotish Aryraaj Upadhyay.</p>
+</div>
+<div class="flex items-center gap-6 shrink-0">
+<div class="flex items-center gap-3 px-5 py-3 rounded-2xl bg-amber-50/60 border border-amber-200/80">
+<div class="font-display text-3xl font-bold text-slate-900 leading-none">5.0</div>
+<div>
+<div class="text-amber-500 text-sm tracking-widest select-none leading-none">★★★★★</div>
+<div class="text-[11px] font-bold uppercase tracking-wider text-amber-900/80 pt-1">1k+ verified reviews</div>
+</div>
+</div>
+<a class="inline-flex items-center justify-center gap-2 px-5 py-3 rounded-lg bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-semibold transition-colors shadow-xs" href="#ratings" data-page-link="ratings">
+<span class="">View Ratings</span>
+<span class="">→</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<div class="bg-slate-50/70 border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-all">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-amber-500 text-sm tracking-widest">★★★★★</span>
+<span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600">Verified</span>
+</div>
+<p class="text-sm text-slate-700 leading-relaxed italic">"Words can't describe what you have done for me and my closed ones... Thank you so much. May God always protect you."</p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-200/60 flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-amber-100 text-amber-900 font-bold flex items-center justify-center text-sm">V</div>
+<div>
+<div class="text-sm font-bold text-slate-900">Vaishnavi</div>
+<div class="text-xs text-slate-500">Astrology Consultation</div>
+</div>
+</div>
+</div>
+<div class="bg-slate-50/70 border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-all">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-amber-500 text-sm tracking-widest">★★★★★</span>
+<span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600">Verified</span>
+</div>
+<p class="text-sm text-slate-700 leading-relaxed italic">"Astrologer Aryraaj's guidance truly helped in my mom's health recovery. Accurate remedies, caring support, and positive results!"</p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-200/60 flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-amber-100 text-amber-900 font-bold flex items-center justify-center text-sm">N</div>
+<div>
+<div class="text-sm font-bold text-slate-900">Narayan</div>
+<div class="text-xs text-slate-500">Health &amp; Remedial Guidance</div>
+</div>
+</div>
+</div>
+<div class="bg-slate-50/70 border border-slate-200/90 rounded-2xl p-6 flex flex-col justify-between hover:shadow-md transition-all">
+<div class="space-y-3">
+<div class="flex items-center justify-between">
+<span class="text-amber-500 text-sm tracking-widest">★★★★★</span>
+<span class="text-xs font-semibold px-2 py-0.5 rounded-full bg-emerald-500/10 text-emerald-600">Verified</span>
+</div>
+<p class="text-sm text-slate-700 leading-relaxed italic">"He is absolutely amazing. His prediction is so accurate, I always come back to him. The way he talks is so heartwarming 🙏"</p>
+</div>
+<div class="mt-6 pt-4 border-t border-slate-200/60 flex items-center gap-3">
+<div class="w-9 h-9 rounded-full bg-amber-100 text-amber-900 font-bold flex items-center justify-center text-sm">G</div>
+<div>
+<div class="text-sm font-bold text-slate-900">Gitanjali</div>
+<div class="text-xs text-slate-500">Vedic Prediction</div>
+</div>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+<!-- FULL RATINGS -->
+<section id="rating-details" data-page-view="ratings" class="w-full py-16 lg:py-24 bg-white border-b border-slate-200/80">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 space-y-10">
+<div class="text-center max-w-3xl mx-auto space-y-3"><span class="text-xs font-bold tracking-widest text-primary uppercase">Client Ratings</span><h2 class="font-display text-3xl sm:text-4xl font-semibold text-slate-900">Client experiences and feedback</h2><p class="text-slate-600">1,000+ consultations and reviews shared by clients.</p></div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6">
+<div class="md:col-span-5 rounded-xl border border-amber-200/70 p-6"><span class="text-xs font-bold tracking-widest uppercase text-slate-400">Jyotish Aryraaj Upadhyay</span><h3 class="font-display text-2xl font-bold text-slate-900 mt-2">Vedic Astrologer &amp; Life Coach</h3><p class="text-sm text-slate-600 mt-3">Guidance in Vedic Astrology, Numerology, Face Reading, Palmistry, Vastu, Prashana, and Lal Kitab remedies.</p><div class="flex items-end gap-3 mt-6"><strong class="font-display text-5xl text-slate-900">5.0</strong><span class="text-amber-500 text-xl" aria-label="5 out of 5 stars">★★★★★</span></div><p class="text-xs text-slate-500 mt-1">Based on client reviews</p></div>
+<div class="md:col-span-7 rounded-xl border border-amber-200/70 p-6 sm:p-8"><div class="grid grid-cols-3 gap-4 text-center sm:text-left mb-6"><div><span class="block text-xs uppercase tracking-wider text-slate-400">Overall rating</span><strong class="font-display text-2xl text-slate-900">5.0 / 5</strong></div><div><span class="block text-xs uppercase tracking-wider text-slate-400">Consultations</span><strong class="font-display text-2xl text-slate-900">10,000+</strong></div><div><span class="block text-xs uppercase tracking-wider text-slate-400">Experience</span><strong class="font-display text-2xl text-primary">7+ years</strong></div></div><div class="space-y-3 border-t border-slate-100 pt-5" aria-label="Rating distribution"><div class="flex items-center gap-3 text-xs"><span class="w-10">5 ★</span><div class="h-2.5 flex-1 overflow-hidden rounded-full bg-amber-50"><span class="block h-full w-[92%] bg-primary"></span></div><span>92%</span></div><div class="flex items-center gap-3 text-xs"><span class="w-10">4 ★</span><div class="h-2.5 flex-1 overflow-hidden rounded-full bg-amber-50"><span class="block h-full w-[6%] bg-primary"></span></div><span>6%</span></div><div class="flex items-center gap-3 text-xs"><span class="w-10">3 ★</span><div class="h-2.5 flex-1 overflow-hidden rounded-full bg-amber-50"><span class="block h-full w-[2%] bg-primary"></span></div><span>2%</span></div><div class="flex items-center gap-3 text-xs"><span class="w-10">2 ★</span><div class="h-2.5 flex-1 overflow-hidden rounded-full bg-amber-50"><span class="block h-full w-[1%] bg-primary"></span></div><span>&lt;1%</span></div><div class="flex items-center gap-3 text-xs"><span class="w-10">1 ★</span><div class="h-2.5 flex-1 overflow-hidden rounded-full bg-amber-50"><span class="block h-full w-0 bg-primary"></span></div><span>0%</span></div></div><p class="text-xs text-slate-500 border-t border-slate-100 mt-5 pt-4">Rating figures and review text are presented as provided in the source page.</p></div>
+</div>
+<div><div class="flex flex-wrap items-end justify-between gap-3 mb-5"><h3 class="font-display text-2xl font-semibold text-slate-900">Recent client feedback</h3><span class="text-xs text-emerald-700 font-semibold">Client reviews</span></div><div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+<article class="rounded-lg border border-slate-200 p-5"><div class="flex items-center justify-between gap-3"><h4 class="font-semibold text-slate-900">Vaishnavi</h4><span class="text-amber-500" aria-label="5 stars">★★★★★</span></div><p class="mt-3 text-sm text-slate-600 leading-relaxed">“Words can't describe what you have done for me and my closed ones. I have already called you my brother. Thank you so much. May God always protect you from negativity.”</p></article>
+<article class="rounded-lg border border-slate-200 p-5"><div class="flex items-center justify-between gap-3"><h4 class="font-semibold text-slate-900">Narayan</h4><span class="text-amber-500" aria-label="5 stars">★★★★★</span></div><p class="mt-3 text-sm text-slate-600 leading-relaxed">“Astrologer Aryraaj's guidance truly helped in my mom's health recovery. Accurate remedies, caring support, and positive results. Highly recommend!”</p></article>
+<article class="rounded-lg border border-slate-200 p-5"><div class="flex items-center justify-between gap-3"><h4 class="font-semibold text-slate-900">Simran</h4><span class="text-amber-500" aria-label="5 stars">★★★★★</span></div><p class="mt-3 text-sm text-slate-600 leading-relaxed">“Aryraaj ji, how did you tell everything so accurately? Your prediction is true. I am truly blessed. Thank you Aryraaj.”</p></article>
+<article class="rounded-lg border border-slate-200 p-5"><div class="flex items-center justify-between gap-3"><h4 class="font-semibold text-slate-900">Gitanjali</h4><span class="text-amber-500" aria-label="5 stars">★★★★★</span></div><p class="mt-3 text-sm text-slate-600 leading-relaxed">“He is absolutely amazing. His prediction is so accurate, I always come back to him. The way he talks is so heartwarming.”</p></article>
+<article class="rounded-lg border border-slate-200 p-5"><div class="flex items-center justify-between gap-3"><h4 class="font-semibold text-slate-900">Upasana</h4><span class="text-amber-500" aria-label="5 stars">★★★★★</span></div><p class="mt-3 text-sm text-slate-600 leading-relaxed">“Highly recommended astrologer, thanks for detailed analysis and definitive answer. Thanks for positive vibes.”</p></article>
+<article class="rounded-lg border border-slate-200 p-5"><div class="flex items-center justify-between gap-3"><h4 class="font-semibold text-slate-900">Saloni</h4><span class="text-amber-500" aria-label="5 stars">★★★★★</span></div><p class="mt-3 text-sm text-slate-600 leading-relaxed">“Thank you so much. I feel good while talking to him. He was genuinely such a nice person and gave the best advice.”</p></article>
+<article class="rounded-lg border border-slate-200 p-5"><div class="flex items-center justify-between gap-3"><h4 class="font-semibold text-slate-900">Swati</h4><span class="text-amber-500" aria-label="5 stars">★★★★★</span></div><p class="mt-3 text-sm text-slate-600 leading-relaxed">“He was very good in his reading and many times already knew the points of my concern. The remedies were also very easy. Will definitely follow up.”</p></article>
+<article class="rounded-lg border border-slate-200 p-5"><div class="flex items-center justify-between gap-3"><h4 class="font-semibold text-slate-900">Rajdeep</h4><span class="text-amber-500" aria-label="5 stars">★★★★★</span></div><p class="mt-3 text-sm text-slate-600 leading-relaxed">“Such a wonderful soul. Thank you so much for your reading and predictions. Will connect again.”</p></article>
+<article class="rounded-lg border border-slate-200 p-5"><div class="flex items-center justify-between gap-3"><h4 class="font-semibold text-slate-900">Nidhi</h4><span class="text-amber-500" aria-label="5 stars">★★★★★</span></div><p class="mt-3 text-sm text-slate-600 leading-relaxed">“You are not just an astrologer, you are a guide. As you said, it happened. God bless.”</p></article>
+<article class="rounded-lg border border-slate-200 p-5"><div class="flex items-center justify-between gap-3"><h4 class="font-semibold text-slate-900">Rohit</h4><span class="text-amber-500" aria-label="5 stars">★★★★★</span></div><p class="mt-3 text-sm text-slate-600 leading-relaxed">“Thank you so much for your insights and guidance. Your deep understanding and clarity have given me a new perspective and a sense of direction.”</p></article>
+</div></div>
+</div>
+</section>
+</main>
+<!-- 6. FOOTER -->
+<footer class="w-full bg-white border-t border-slate-200 py-12">
+<div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col md:flex-row items-center justify-between gap-6">
+<!-- Brand & Tagline -->
+<div class="text-center md:text-left space-y-1">
+<div class="flex items-center justify-center md:justify-start gap-2">
+<span class="text-primary font-bold">✦</span>
+<span class="font-display text-lg font-bold text-slate-900">Jyotish Aryraaj Upadhyay</span>
+</div>
+<p class="text-sm text-slate-500">Private astrology consultations</p>
+</div>
+<!-- Copyright -->
+<div class="flex flex-wrap items-center justify-center gap-4 py-2">
+  <a href="https://www.instagram.com/mystic.acharya?stkn=bzN5enF1aHhsYWdw" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-slate-50/70 text-slate-700 hover:text-primary hover:border-amber-200 hover:bg-amber-50/60 transition-all text-xs font-semibold shadow-xs">
+    <svg class="w-4 h-4 shrink-0 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+    </svg>
+    <span class="">@mystic.acharya</span>
+  </a>
+  <a href="mailto:mysticguruji4@gmail.com" class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-slate-200 bg-slate-50/70 text-slate-700 hover:text-primary hover:border-amber-200 hover:bg-amber-50/60 transition-all text-xs font-semibold shadow-xs">
+    <svg class="w-4 h-4 shrink-0 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+      <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"></path>
+    </svg>
+    <span class="">mysticguruji4@gmail.com</span>
+  </a>
+</div><div class="text-sm text-slate-400 text-center md:text-right">
+        © 2026 All rights reserved.
+      </div>
+</div>
+</footer>
+<script>
+const bookingConfig = {
+  paymentCreateEndpoint: "/api/payment/create",
+  paymentVerifyEndpoint: "/api/payment/verify",
+  bookingCreateEndpoint: "/api/booking/create",
+  kundliCreateEndpoint: "/api/kundli/create",
+  kundliFee: 499,
+  prices: { Voice: { 15: 749, 30: 1499, 60: 3000 }, Video: { 15: 1499, 30: 2999, 60: 6000 } },
+  questionLimits: { 15: 3, 30: 5, 60: 10 }
+};
+
+const bookingState = {
+  service: "Voice",
+  duration: 15,
+  includeKundli: true,
+  selectedSlot: null,
+  paymentVerified: false,
+  paymentReference: null,
+  submitting: false
+};
+
+const bookingElement = id => document.getElementById(id);
+const bookingMoney = amount => `₹${Number(amount).toLocaleString("en-IN")}`;
+const bookingAmount = () => bookingState.service === "Kundli Only"
+  ? bookingConfig.kundliFee
+  : bookingConfig.prices[bookingState.service][bookingState.duration] + (bookingState.includeKundli ? bookingConfig.kundliFee : 0);
+
+function showBookingStatus(message, type = "info") {
+  const box = bookingElement("paymentStatus");
+  if (!box) return;
+  box.className = "rounded-md border p-3 text-sm";
+  const styles = {
+    error: "border-red-200 bg-red-50 text-red-700",
+    success: "border-emerald-200 bg-emerald-50 text-emerald-700",
+    info: "border-blue-200 bg-blue-50 text-blue-700"
+  };
+  box.classList.add(...styles[type].split(" "));
+  box.textContent = message;
+}
+
+function updateBookingSummary() {
+  const amount = bookingAmount();
+  const questions = [...document.querySelectorAll("#questions input")].filter(input => input.value.trim()).length;
+  const values = {
+    summaryType: bookingState.service,
+    summaryDuration: bookingState.service === "Kundli Only" ? "Not required" : `${bookingState.duration} minutes`,
+    summaryQuestions: bookingState.service === "Kundli Only" ? "Not required" : `${questions} / ${bookingConfig.questionLimits[bookingState.duration]}`,
+    summaryKundli: bookingState.service === "Kundli Only" ? "Included (₹499)" : bookingState.includeKundli ? "Yes (+₹499)" : "No",
+    summaryDate: bookingState.service === "Kundli Only" ? "Not required" : bookingElement("appointmentDate").value || "Not selected",
+    summarySlot: bookingState.service === "Kundli Only" ? "Not required" : bookingState.selectedSlot?.label || "Not selected",
+    summaryTotal: bookingMoney(amount),
+    totalAmount: bookingMoney(amount)
+  };
+  Object.entries(values).forEach(([id, value]) => {
+    const element = bookingElement(id);
+    if (element) element.textContent = value;
+  });
+  const limit = bookingElement("questionLimit");
+  if (limit) limit.textContent = bookingState.service === "Kundli Only" ? "Not required" : `Maximum ${bookingConfig.questionLimits[bookingState.duration]}`;
+}
+
+function resetBookingPayment() {
+  bookingState.paymentVerified = false;
+  bookingState.paymentReference = null;
+  bookingElement("paymentSection").classList.add("hidden");
+  bookingElement("confirmSection").classList.add("hidden");
+  const status = bookingElement("paymentStatus");
+  status.classList.add("hidden");
+  bookingElement("verifyPayment").disabled = false;
+  bookingElement("verifyPayment").textContent = "Pay & Verify Payment";
+}
+
+function renderBookingSlots() {
+  const container = bookingElement("slots");
+  const date = bookingElement("appointmentDate").value;
+  container.replaceChildren();
+  bookingState.selectedSlot = null;
+  bookingElement("selectedSlotNotice").classList.add("hidden");
+  resetBookingPayment();
+  if (!date) {
+    container.innerHTML = '<p class="col-span-full text-sm text-slate-500">Select a date to view available times.</p>';
+    updateBookingSummary();
+    return;
+  }
+  const duration = Number(bookingState.duration);
+  const endOfDay = 17 * 60;
+  for (let minute = 13 * 60; minute + duration <= endOfDay; minute += duration + 5) {
+    const hour = Math.floor(minute / 60);
+    const mins = minute % 60;
+    const label = `${String(hour > 12 ? hour - 12 : hour).padStart(2, "0")}:${String(mins).padStart(2, "0")} ${hour >= 12 ? "PM" : "AM"}`;
+    const slot = document.createElement("button");
+    slot.type = "button";
+    slot.className = "rounded-lg border border-slate-200 bg-white px-3 py-3 text-sm font-semibold text-slate-800 hover:border-primary hover:bg-amber-50";
+    slot.textContent = label;
+    slot.addEventListener("click", () => {
+      bookingState.selectedSlot = { start_time: `${String(hour).padStart(2, "0")}:${String(mins).padStart(2, "0")}:00`, label };
+      container.querySelectorAll("button").forEach(button => button.classList.remove("border-2", "border-primary", "bg-amber-50"));
+      slot.classList.add("border-2", "border-primary", "bg-amber-50");
+      bookingElement("selectedSlotText").textContent = `${date} at ${label}`;
+      bookingElement("selectedSlotNotice").classList.remove("hidden");
+      resetBookingPayment();
+      bookingElement("paymentSection").classList.remove("hidden");
+      updateBookingSummary();
+    });
+    container.appendChild(slot);
+  }
+  if (!container.childElementCount) container.innerHTML = '<p class="col-span-full text-sm text-slate-500">No slots fit this duration on the selected date.</p>';
+  updateBookingSummary();
+}
+
+function setBookingService(service) {
+  bookingState.service = service;
+  bookingState.selectedSlot = null;
+  resetBookingPayment();
+  document.querySelectorAll("#label-consult-voice, #label-consult-video, #label-consult-kundli").forEach(label => {
+    label.classList.remove("border-2", "border-primary", "bg-amber-50/30");
+    label.classList.add("border", "border-slate-200");
+  });
+  const selectedLabel = bookingElement(`label-consult-${service === "Kundli Only" ? "kundli" : service.toLowerCase()}`);
+  selectedLabel.classList.remove("border", "border-slate-200");
+  selectedLabel.classList.add("border-2", "border-primary", "bg-amber-50/30");
+  const isKundli = service === "Kundli Only";
+  bookingElement("durationOptionsGrid").classList.toggle("hidden", isKundli);
+  bookingElement("durationKundliBanner").classList.toggle("hidden", !isKundli);
+  bookingElement("slotsSection").classList.toggle("hidden", isKundli);
+  bookingElement("appointmentDateWrapper").classList.toggle("hidden", isKundli);
+  bookingElement("appointmentDate").required = !isKundli;
+  bookingElement("questionsWrapper").classList.toggle("hidden", isKundli);
+  bookingElement("kundliAddonWrapper").classList.toggle("hidden", isKundli);
+  bookingElement("kundliIncludedNotice").classList.toggle("hidden", !isKundli);
+  bookingElement("includeKundliCheckbox").disabled = isKundli;
+  if (isKundli) {
+    bookingElement("paymentSection").classList.remove("hidden");
+    bookingElement("confirmAppointment").textContent = "Confirm Kundli Order";
+  } else {
+    bookingElement("confirmAppointment").textContent = "Confirm Appointment";
+    if (bookingElement("appointmentDate").value) renderBookingSlots();
+  }
+  updateBookingSummary();
+}
+
+async function startBookingPayment() {
+  if (bookingState.submitting) return;
+  const isKundli = bookingState.service === "Kundli Only";
+  if (!isKundli && !bookingState.selectedSlot) return showBookingStatus("Please select an appointment slot first.", "error");
+  const requiredIds = ["fullName", "mobile", "email", ...(!isKundli ? ["appointmentDate"] : []), ...(isKundli ? ["kundliName", "birthDate", "birthTime", "birthPlace"] : [])];
+  const missing = requiredIds.map(bookingElement).find(field => !field.value.trim());
+  if (missing) {
+    missing.focus();
+    return showBookingStatus("Please complete your required details before payment.", "error");
+  }
+  const amount = bookingAmount();
+  const payload = {
+    amount,
+    consultation_type: bookingState.service.toLowerCase(),
+    duration: isKundli ? null : bookingState.duration,
+    appointment_date: isKundli ? null : bookingElement("appointmentDate").value,
+    selected_slot: isKundli ? null : bookingState.selectedSlot.start_time,
+    customer: { full_name: bookingElement("fullName").value.trim(), mobile: bookingElement("mobile").value.trim(), email: bookingElement("email").value.trim() },
+    kundli: isKundli || bookingState.includeKundli ? {
+      kundli_name: bookingElement("kundliName").value.trim(), birth_date: bookingElement("birthDate").value,
+      birth_time: bookingElement("birthTime").value, birth_country: bookingElement("birthCountry").value,
+      birth_place: bookingElement("birthPlace").value.trim(), kundli_format: "PDF"
+    } : null
+  };
+  const button = bookingElement("verifyPayment");
+  bookingState.submitting = true;
+  button.disabled = true;
+  button.textContent = "Processing Payment...";
+  bookingElement("paymentStatus").classList.remove("hidden");
+  showBookingStatus("Starting secure payment...");
+  try {
+    const response = await fetch(bookingConfig.paymentCreateEndpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+    if (!response.ok) throw new Error(`Payment creation failed (${response.status})`);
+    const result = await response.json();
+    const reference = result.payment_reference || result.order_id || result.transaction_id;
+    if (result.redirect_url) {
+      sessionStorage.setItem("pendingPayment", JSON.stringify({ service: bookingState.service, duration: bookingState.duration, appointmentDate: bookingElement("appointmentDate").value, slot: bookingState.selectedSlot, amount }));
+      window.location.href = result.redirect_url;
+      return;
+    }
+    if (!reference) throw new Error("Payment gateway did not return a valid payment reference.");
+    await verifyBookingPayment(reference, amount);
+  } catch (error) {
+    showBookingStatus(error.message || "Payment could not be started. Please try again.", "error");
+  } finally {
+    bookingState.submitting = false;
+    if (!bookingState.paymentVerified) {
+      button.disabled = false;
+      button.textContent = "Pay & Verify Payment";
+    }
+  }
+}
+
+async function verifyBookingPayment(reference, amount = bookingAmount()) {
+  const isKundli = bookingState.service === "Kundli Only";
+  const response = await fetch(bookingConfig.paymentVerifyEndpoint, {
+    method: "POST", headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({ payment_reference: reference, amount, appointment_date: isKundli ? null : bookingElement("appointmentDate").value, selected_slot: isKundli ? null : bookingState.selectedSlot?.start_time, consultation_type: bookingState.service.toLowerCase() })
+  });
+  if (!response.ok) throw new Error("Payment verification failed.");
+  const result = await response.json();
+  if (result.verified !== true && result.status !== "success" && result.status !== "paid") throw new Error("Payment has not been verified yet.");
+  bookingState.paymentVerified = true;
+  bookingState.paymentReference = reference;
+  showBookingStatus("Payment verified. Confirm your request to finish.", "success");
+  bookingElement("verifyPayment").disabled = true;
+  bookingElement("verifyPayment").textContent = "Payment Verified";
+  bookingElement("confirmSection").classList.remove("hidden");
+}
+
+async function submitBooking(event) {
+  event.preventDefault();
+  if (bookingState.submitting) return;
+  if (!bookingState.paymentVerified) return showBookingStatus("Please complete and verify payment first.", "error");
+  const isKundli = bookingState.service === "Kundli Only";
+  const questions = [...document.querySelectorAll("#questions input")].map(input => input.value.trim()).filter(Boolean);
+  const payload = {
+    full_name: bookingElement("fullName").value.trim(), mobile: bookingElement("mobile").value.trim(), email: bookingElement("email").value.trim(),
+    consultation_type: bookingState.service.toLowerCase(), duration: isKundli ? null : bookingState.duration,
+    questions: isKundli ? [] : questions, appointment_date: isKundli ? null : bookingElement("appointmentDate").value,
+    selected_slot: isKundli ? null : bookingState.selectedSlot?.start_time, include_kundli: isKundli || bookingState.includeKundli,
+    kundli_format: "PDF", kundli_name: bookingElement("kundliName").value.trim() || null,
+    birth_date: bookingElement("birthDate").value || null, birth_time: bookingElement("birthTime").value || null,
+    birth_country: bookingElement("birthCountry").value, birth_place: bookingElement("birthPlace").value.trim() || null,
+    amount_displayed: bookingAmount(), payment_reference: bookingState.paymentReference, payment_verified: true
+  };
+  const button = bookingElement("confirmAppointment");
+  bookingState.submitting = true;
+  button.disabled = true;
+  button.textContent = "Confirming...";
+  try {
+    const endpoint = isKundli ? bookingConfig.kundliCreateEndpoint : bookingConfig.bookingCreateEndpoint;
+    const response = await fetch(endpoint, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+    if (!response.ok) throw new Error((await response.text()) || `Booking failed (${response.status})`);
+    const result = await response.json();
+    const reference = result.booking_reference || result.booking_id || result.order_id || bookingState.paymentReference;
+    bookingElement("bookingForm").innerHTML = `<div class="py-10 text-center"><div class="mx-auto w-16 h-16 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700 text-3xl mb-5">✓</div><h2 class="font-display text-2xl font-bold text-slate-900">${isKundli ? "Kundli Order Confirmed" : "Appointment Confirmed"}</h2><p class="mt-2 text-sm text-slate-600">Your payment was verified and your request has been confirmed.</p>${reference ? `<p class="mt-4 text-xs text-slate-500">Reference: ${reference}</p>` : ""}${result.zoom_link || result.join_url ? `<a class="mt-5 inline-flex rounded-md bg-primary px-4 py-2 text-sm font-semibold text-white" href="${result.zoom_link || result.join_url}" target="_blank" rel="noopener noreferrer">Join meeting</a>` : ""}</div>`;
+    sessionStorage.removeItem("pendingPayment");
+  } catch (error) {
+    showBookingStatus(error.message || "Unable to confirm your request. Please try again.", "error");
+    button.disabled = false;
+    button.textContent = isKundli ? "Confirm Kundli Order" : "Confirm Appointment";
+  } finally {
+    bookingState.submitting = false;
+  }
+}
+
+const pageRoutes = new Set(["home", "about", "appointment", "ratings"]);
+
+function showPage(requestedPage, scrollToTop = false) {
+  const page = pageRoutes.has(requestedPage) ? requestedPage : "home";
+  document.querySelectorAll("[data-page-view]").forEach(view => {
+    view.classList.toggle("hidden", view.dataset.pageView !== page);
+  });
+  document.querySelectorAll("[data-page-nav]").forEach(link => {
+    const active = link.dataset.pageNav === page;
+    link.classList.toggle("text-primary", active);
+    link.classList.toggle("font-semibold", active);
+    link.classList.toggle("text-slate-600", !active);
+    link.classList.toggle("font-medium", !active);
+    if (active) link.setAttribute("aria-current", "page");
+    else link.removeAttribute("aria-current");
+  });
+  if (scrollToTop) window.scrollTo({ top: 0, behavior: "smooth" });
+}
+
+function navigateToPage(page) {
+  if (!pageRoutes.has(page)) return;
+  if (window.location.hash !== `#${page}`) {
+    window.history.pushState({}, "", `#${page}`);
+  }
+  showPage(page, true);
+}
+
+document.addEventListener("DOMContentLoaded", () => {
+  bookingElement("startBooking").addEventListener("click", () => {
+    bookingElement("bookingForm").scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+  document.addEventListener("click", event => {
+    const link = event.target.closest("a[data-page-link]");
+    if (!link || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+    event.preventDefault();
+    navigateToPage(link.dataset.pageLink);
+  });
+  const initialRoute = window.location.hash.slice(1);
+  const initialPage = pageRoutes.has(initialRoute) ? initialRoute : "home";
+  if (initialRoute !== initialPage) window.history.replaceState({}, "", `#${initialPage}`);
+  showPage(initialPage);
+  window.addEventListener("popstate", () => showPage(window.location.hash.slice(1)));
+  window.addEventListener("hashchange", () => showPage(window.location.hash.slice(1)));
+
+  const form = bookingElement("bookingForm");
+  const slotsSection = bookingElement("slotsSection");
+  [bookingElement("paymentSection"), bookingElement("confirmSection")].forEach(section => {
+    if (section.parentElement === slotsSection) form.appendChild(section);
+  });
+  const date = bookingElement("appointmentDate");
+  const today = new Date();
+  date.min = `${today.getFullYear()}-${String(today.getMonth() + 1).padStart(2, "0")}-${String(today.getDate()).padStart(2, "0")}`;
+  document.querySelectorAll('input[name="consultationType"]').forEach(input => input.addEventListener("change", () => setBookingService(input.value)));
+  document.querySelectorAll('input[name="duration"]').forEach(input => input.addEventListener("change", () => {
+    bookingState.duration = Number(input.value);
+    bookingState.selectedSlot = null;
+    resetBookingPayment();
+    renderBookingSlots();
+  }));
+  date.addEventListener("change", renderBookingSlots);
+  bookingElement("includeKundliCheckbox").addEventListener("change", event => {
+    bookingState.includeKundli = event.target.checked;
+    updateBookingSummary();
+  });
+  bookingElement("verifyPayment").addEventListener("click", startBookingPayment);
+  bookingElement("bookingForm").addEventListener("submit", submitBooking);
+  bookingElement("questions").addEventListener("input", updateBookingSummary);
+  bookingElement("addQuestion").addEventListener("click", () => {
+    const container = bookingElement("questions");
+    const limit = bookingConfig.questionLimits[bookingState.duration];
+    if (container.querySelectorAll("input").length >= limit) return showBookingStatus(`Maximum ${limit} questions are allowed.`, "error");
+    const input = document.createElement("input");
+    input.type = "text";
+    input.placeholder = `Question ${container.querySelectorAll("input").length + 1}`;
+    input.className = "block w-full rounded-md border-slate-300 text-sm";
+    container.appendChild(input);
+    input.focus();
+    updateBookingSummary();
+  });
+  document.querySelectorAll("#bookingForm input, #bookingForm select").forEach(input => input.addEventListener("input", updateBookingSummary));
+  updateBookingSummary();
+  const pending = sessionStorage.getItem("pendingPayment");
+  const params = new URLSearchParams(window.location.search);
+  const reference = params.get("payment_reference") || params.get("payment_id") || params.get("transaction_id");
+  if (pending && reference) {
+    try {
+      const saved = JSON.parse(pending);
+      if (saved.service) {
+        const radio = document.querySelector(`input[name="consultationType"][value="${saved.service}"]`);
+        if (radio) { radio.checked = true; setBookingService(saved.service); }
+      }
+      if (saved.duration) {
+        const radio = document.querySelector(`input[name="duration"][value="${saved.duration}"]`);
+        if (radio) { radio.checked = true; bookingState.duration = Number(saved.duration); }
+      }
+      if (saved.appointmentDate) date.value = saved.appointmentDate;
+      bookingState.selectedSlot = saved.slot;
+      if (bookingState.selectedSlot) {
+        bookingElement("paymentSection").classList.remove("hidden");
+        bookingElement("selectedSlotNotice").classList.remove("hidden");
+        bookingElement("selectedSlotText").textContent = `${saved.appointmentDate} at ${saved.slot.label || saved.slot.start_time}`;
+      }
+      updateBookingSummary();
+      verifyBookingPayment(reference, saved.amount).then(() => sessionStorage.removeItem("pendingPayment")).catch(error => showBookingStatus(error.message, "error"));
+      window.history.replaceState({}, document.title, window.location.pathname);
+    } catch (error) {
+      showBookingStatus("Unable to restore the pending payment. Please contact support.", "error");
+    }
+  }
+});
+</script>
+</body></html>
